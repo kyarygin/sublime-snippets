@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+setwd('${TM_FILEPATH/[^\/]+$//g}')
+rm(list=ls())
+dev.off()
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>start</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.r</scope>
+    <description>setwd, rm, dev.off</description>
+</snippet>

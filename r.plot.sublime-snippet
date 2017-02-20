@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+plot(${1:y}~${2:x}, ${3:df}, type='${4:l}', col='${5:black}')
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>plot</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.r</scope>
+    <description>plot(x~y, df, ...)</description>
+</snippet>

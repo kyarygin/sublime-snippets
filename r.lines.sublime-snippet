@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+lines(${1:y}~${2:x}, ${3:df}, col='${4:black}', lwd=${5:1}, lty=${6:1})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>lines</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.r</scope>
+    <description>lines(x~y, df, ...)</description>
+</snippet>
