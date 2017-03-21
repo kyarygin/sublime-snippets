@@ -3,11 +3,11 @@
 plot(NULL, axes=F,
      xlim=c(${1:Xmin}, ${2:Xmax}), ylim=c(${3:Ymin}, ${4:Ymax}),
      xlab='', ylab='', main='')
-abline(h=seq(${1:Xmin}, ${2:Xmax}, 1), v=seq(${3:Ymin}, ${4:Ymax}, 1),
+abline(v=seq(${1:Xmin}, ${2:Xmax}, 1), h=seq(${3:Ymin}, ${4:Ymax}, 1),
        col='gray80', lwd=1)
 # plot
-Axis(side=1, labels=seq(${1:Xmin}, ${2:Xmax}, 1), at=seq(${1:Xmin}, ${2:Xmax}, 1), lwd=2)
-Axis(side=2, labels=seq(${3:Ymin}, ${4:Ymax}, 1), at=seq(${3:Ymin}, ${4:Ymax}, 1), lwd=2)
+axis(side=1, labels=seq(${1:Xmin}, ${2:Xmax}, 1), at=seq(${1:Xmin}, ${2:Xmax}, 1), lwd=2, las=1)
+axis(side=2, labels=seq(${3:Ymin}, ${4:Ymax}, 1), at=seq(${3:Ymin}, ${4:Ymax}, 1), lwd=2, las=1)
 legend('topleft', c('line', 'point'),
        col=c('black', 'red'),
        lty=c(1, NA), lwd=c(1, NA), # lines param
