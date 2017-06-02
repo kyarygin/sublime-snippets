@@ -1,13 +1,14 @@
 <snippet>
     <content><![CDATA[
 plot(NULL, axes=F,
-     xlim=c(${1:Xmin}, ${2:Xmax}), ylim=c(${3:Ymin}, ${4:Ymax}),
+     xlim=c(${1:Xmin}, ${2:Xmax}), ylim=c(${4:Ymin}, ${5:Ymax}),
      xlab='', ylab='', main='')
-abline(v=seq(${1:Xmin}, ${2:Xmax}, 1), h=seq(${3:Ymin}, ${4:Ymax}, 1),
+abline(v=seq(${1:Xmin}, ${2:Xmax}, ${3:Xtick}), h=seq(${4:Ymin}, ${5:Ymax}, ${6:Ytick}),
        col='gray80', lwd=1)
+abline(h=0, col='gray80', lwd=2)
 # plot
-axis(side=1, labels=seq(${1:Xmin}, ${2:Xmax}, 1), at=seq(${1:Xmin}, ${2:Xmax}, 1), lwd=2, las=1)
-axis(side=2, labels=seq(${3:Ymin}, ${4:Ymax}, 1), at=seq(${3:Ymin}, ${4:Ymax}, 1), lwd=2, las=1)
+axis(side=1, labels=seq(${1:Xmin}, ${2:Xmax}, ${3:Xtick}), at=seq(${1:Xmin}, ${2:Xmax}, ${3:Xtick}), lwd=2, las=1)
+axis(side=2, labels=seq(${4:Ymin}, ${5:Ymax}, ${6:Ytick}), at=seq(${4:Ymin}, ${5:Ymax}, ${6:Ytick}), lwd=2, las=1)
 legend('topleft', c('line', 'point'),
        col=c('black', 'red'),
        lty=c(1, NA), lwd=c(1, NA), # lines param
