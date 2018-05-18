@@ -4,6 +4,10 @@ setwd('${TM_FILEPATH/[^\/]+$//g}')
 rm(list=ls())
 dev.off()
 
+library(data.table)
+
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>start</tabTrigger>
