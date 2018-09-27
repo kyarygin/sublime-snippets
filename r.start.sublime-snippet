@@ -3,8 +3,10 @@
 setwd('${TM_FILEPATH/[^\/]+$//g}')
 rm(list=ls())
 dev.off()
+options('encoding' = 'UTF-8')
 
 library(data.table)
+library(fasttime)
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
