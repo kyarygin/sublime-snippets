@@ -7,7 +7,7 @@ gc()
 options('encoding' = 'UTF-8')
 
 library(data.table)
-library(ggplot)
+library(ggplot2)
 library(tictoc)
 
 # -------------------------------------------------------------------------------------------------
